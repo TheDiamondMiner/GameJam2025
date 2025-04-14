@@ -10,6 +10,12 @@ const config = {
     height: 720,
     backgroundColor: '#000000',
     pixelArt: false,
+    physics: {
+            default: 'arcade',
+            arcade: {
+                gravity: { y: 500 },
+                debug: false,} 
+            },
     scene: [
         MainMenu,
         CatacombsOne,
