@@ -11,6 +11,13 @@ export class MainMenu extends Phaser.Scene {
     }
 
     create() {
+        const buttonStyle = {
+            fontSize: '30px',
+            fill: '#ffffff',
+            backgroundColor: '#00000088',
+            padding: { x: 20, y: 10 }
+        };
+
         const clickText = this.add.text(640, 500, 'Click Anywhere to Start', {
             fontSize: '28px',
             fill: '#ffffff'
@@ -25,6 +32,7 @@ export class MainMenu extends Phaser.Scene {
         });
 
         this.input.once('pointerdown', () => {
+            clickText.destroy();
             this.cameras.main.fadeOut(1000, 255, 255, 255);
 
             this.cameras.main.once('camerafadeoutcomplete', () => {
@@ -39,21 +47,12 @@ export class MainMenu extends Phaser.Scene {
                 });
                 this.music.play();
 
-                clickText.destroy();
-
-                const buttonStyle = {
-                    fontSize: '30px',
-                    fill: '#ffffff',
-                    backgroundColor: '#00000088',
-                    padding: { x: 20, y: 10 }
-                };
-
                 const centerX = 640;
                 const startY = 450;
                 const spacing = 70;
 
                 const startButton = this.add.text(centerX, startY, 'START', buttonStyle).setOrigin(0.5).setInteractive();
-                const settingsButton = this.add.text(centerX, startY + spacing * 2, 'SETTINGS', buttonStyle).setOrigin(0.5).setInteractive();
+                const settingsButton = this.add.text(centerX, startY + spacing, 'SETTINGS', buttonStyle).setOrigin(0.5).setInteractive();
 
                 [startButton, settingsButton].forEach(btn => {
                     btn.on('pointerover', () => btn.setStyle({ fill: '#ffff00' }));
