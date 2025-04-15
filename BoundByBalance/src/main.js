@@ -2,7 +2,7 @@ import { MainMenu } from './scenes/MainMenu.js';
 import { CatacombsOne } from './scenes/Catacombs_1.js';
 
 const config = {
-    type: Phaser.AUTO,
+    type: Phaser.WEBGL,
     title: 'Bound By Balance',
     description: '',
     parent: 'game-container',

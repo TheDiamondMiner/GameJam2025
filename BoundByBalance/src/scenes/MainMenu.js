@@ -53,10 +53,9 @@ export class MainMenu extends Phaser.Scene {
                 const spacing = 70;
 
                 const startButton = this.add.text(centerX, startY, 'START', buttonStyle).setOrigin(0.5).setInteractive();
-                const levelsButton = this.add.text(centerX, startY + spacing, 'LEVELS', buttonStyle).setOrigin(0.5).setInteractive();
                 const settingsButton = this.add.text(centerX, startY + spacing * 2, 'SETTINGS', buttonStyle).setOrigin(0.5).setInteractive();
 
-                [startButton, levelsButton, settingsButton].forEach(btn => {
+                [startButton, settingsButton].forEach(btn => {
                     btn.on('pointerover', () => btn.setStyle({ fill: '#ffff00' }));
                     btn.on('pointerout', () => btn.setStyle({ fill: '#ffffff' }));
                 });
@@ -64,11 +63,6 @@ export class MainMenu extends Phaser.Scene {
                 startButton.on('pointerdown', () => {
                     this.transitionToScene('CatacombsOne');
                 });
-
-                levelsButton.on('pointerdown', () => {
-                    this.transitionToScene('LevelSelect');
-                });
-
                 settingsButton.on('pointerdown', () => {
                     this.transitionToScene('Settings');
                 });
