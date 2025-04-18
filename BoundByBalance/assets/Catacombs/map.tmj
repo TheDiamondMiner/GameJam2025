@@ -29,14 +29,14 @@
         {
          "data":[2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
             2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2,
-            2, 0, 5, 0, 0, 5, 0, 0, 5, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 2,
+            2, 0, 5, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 2,
             2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 2,
             2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 2,
             2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 4, 4, 4, 2,
             2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2,
-            2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 5, 0, 5, 0, 5, 0, 0, 2,
+            2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 5, 0, 0, 0, 0, 0, 0, 2,
             2, 0, 0, 2, 2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2,
-            2, 0, 0, 0, 0, 0, 5, 0, 5, 0, 2, 0, 0, 9, 10, 0, 0, 0, 0, 2,
+            2, 0, 0, 0, 0, 0, 5, 0, 0, 0, 2, 0, 0, 9, 10, 0, 0, 0, 0, 2,
             2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 13, 14, 0, 0, 0, 0, 2,
             2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
          "height":12,
@@ -51,174 +51,170 @@
         }, 
         {
          "draworder":"topdown",
-         "id":4,
-         "name":"breakable",
-         "objects":[
-                {
-                 "height":190.667,
-                 "id":10,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":61.3333,
-                 "x":641.333,
-                 "y":128
-                }, 
-                {
-                 "height":69.3333,
-                 "id":11,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":192,
-                 "x":1022.67,
-                 "y":320
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "draworder":"topdown",
-         "id":3,
-         "name":"lights",
+         "id":7,
+         "name":"levelObjects",
          "objects":[
                 {
                  "ellipse":true,
                  "height":0,
-                 "id":1,
+                 "id":18,
                  "name":"",
                  "rotation":0,
-                 "type":"",
+                 "type":"LIGHT",
                  "visible":true,
                  "width":0,
                  "x":158.667,
-                 "y":153.333
-                }, 
-                {
-                 "ellipse":true,
-                 "height":0,
-                 "id":2,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":350.667,
                  "y":152
                 }, 
                 {
                  "ellipse":true,
                  "height":0,
-                 "id":3,
+                 "id":21,
                  "name":"",
                  "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":544,
-                 "y":154.667
-                }, 
-                {
-                 "ellipse":true,
-                 "height":0,
-                 "id":4,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":798.667,
-                 "y":473.333
-                }, 
-                {
-                 "ellipse":true,
-                 "height":0,
-                 "id":5,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":894.667,
-                 "y":629.333
-                }, 
-                {
-                 "ellipse":true,
-                 "height":0,
-                 "id":6,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":928,
-                 "y":472
-                }, 
-                {
-                 "ellipse":true,
-                 "height":0,
-                 "id":7,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":1054.67,
-                 "y":470.667
-                }, 
-                {
-                 "ellipse":true,
-                 "height":0,
-                 "id":8,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
+                 "type":"LIGHT",
                  "visible":true,
                  "width":0,
                  "x":414.667,
-                 "y":604
+                 "y":600
                 }, 
                 {
                  "ellipse":true,
                  "height":0,
-                 "id":9,
+                 "id":23,
                  "name":"",
                  "rotation":0,
-                 "type":"",
+                 "type":"LIGHT",
                  "visible":true,
                  "width":0,
-                 "x":541.333,
-                 "y":598.667
+                 "x":800,
+                 "y":473.333
+                }, 
+                {
+                 "height":0,
+                 "id":26,
+                 "name":"",
+                 "point":true,
+                 "rotation":0,
+                 "type":"SPAWN",
+                 "visible":true,
+                 "width":0,
+                 "x":546.667,
+                 "y":686.667
+                }, 
+                {
+                 "height":0,
+                 "id":27,
+                 "name":"",
+                 "rotation":0,
+                 "type":"MOBILE",
+                 "visible":true,
+                 "width":0,
+                 "x":286.667,
+                 "y":674.667
+                }, 
+                {
+                 "height":19,
+                 "id":31,
+                 "name":"",
+                 "rotation":0,
+                 "text":
+                    {
+                     "color":"#ffffff",
+                     "halign":"center",
+                     "text":"Use W A S D to move!",
+                     "valign":"center",
+                     "wrap":true
+                    },
+                 "type":"TEXT",
+                 "visible":true,
+                 "width":200,
+                 "x":434.17,
+                 "y":570.5
+                }, 
+                {
+                 "height":19,
+                 "id":33,
+                 "name":"",
+                 "rotation":0,
+                 "text":
+                    {
+                     "color":"#ffffff",
+                     "halign":"center",
+                     "text":"Why don't you press E?",
+                     "valign":"center",
+                     "wrap":true
+                    },
+                 "type":"TEXT",
+                 "visible":true,
+                 "width":200,
+                 "x":434.83,
+                 "y":329.167
+                }, 
+                {
+                 "height":40,
+                 "id":34,
+                 "name":"",
+                 "rotation":0,
+                 "text":
+                    {
+                     "color":"#ffffff",
+                     "halign":"center",
+                     "text":"Darkness leaches light. It hurts you.",
+                     "valign":"center",
+                     "wrap":true
+                    },
+                 "type":"TEXT",
+                 "visible":true,
+                 "width":200,
+                 "x":870.83,
+                 "y":137.167
+                }, 
+                {
+                 "height":19,
+                 "id":35,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"text"
+                        }],
+                 "rotation":0,
+                 "text":
+                    {
+                     "color":"#ffffff",
+                     "text":"Press Q to break these.",
+                     "wrap":true
+                    },
+                 "type":"TEXT",
+                 "visible":true,
+                 "width":200,
+                 "x":438.5,
+                 "y":151.833
+                }, 
+                {
+                 "ellipse":true,
+                 "height":0,
+                 "id":37,
+                 "name":"",
+                 "rotation":0,
+                 "type":"LIGHT",
+                 "visible":true,
+                 "width":0,
+                 "x":893.333,
+                 "y":632
                 }],
+         "offsetx":2.66667,
+         "offsety":1.33333,
          "opacity":1,
-         "properties":[
-                {
-                 "name":"color",
-                 "type":"color",
-                 "value":"#ffffaa00"
-                }, 
-                {
-                 "name":"intensity",
-                 "type":"float",
-                 "value":1
-                }, 
-                {
-                 "name":"radius",
-                 "type":"int",
-                 "value":500
-                }],
          "type":"objectgroup",
          "visible":true,
          "x":0,
          "y":0
         }],
- "nextlayerid":5,
- "nextobjectid":12,
+ "nextlayerid":8,
+ "nextobjectid":39,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",
@@ -317,6 +313,11 @@
                     },
                  "properties":[
                         {
+                         "name":"canBreak",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"collides",
                          "type":"bool",
                          "value":true
@@ -341,6 +342,42 @@
                          "tileid":7
                         }],
                  "id":4
+                }, 
+                {
+                 "id":8,
+                 "properties":[
+                        {
+                         "name":"end",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":9,
+                 "properties":[
+                        {
+                         "name":"end",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":12,
+                 "properties":[
+                        {
+                         "name":"end",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":13,
+                 "properties":[
+                        {
+                         "name":"end",
+                         "type":"bool",
+                         "value":true
+                        }]
                 }],
          "tilewidth":64
         }],
